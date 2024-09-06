@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Art & Technology Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="icons/logo.svg" alt="Logo" class="logo">
+            <br>
+            <nav>
+                <ul>
+                    <li><img src="icons/s1.svg" alt="Icon 2" class="icon" onclick="loadPDF(1)"></li
+                    <li><img src="icons/s2.svg" alt="Icon 2" class="icon" onclick="loadPDF(2)"></li>
+                    <li><img src="icons/s3.svg" alt="Icon 3" class="icon" onclick="loadPDF(3)"></li>
+                    <li><img src="icons/s4.svg" alt="Icon 4" class="icon" onclick="loadPDF(4)"></li>
+                    <li><img src="icons/s5.svg" alt="Icon 5" class="icon" onclick="loadPDF(5)"></li>
+                    <li><img src="icons/s6.svg" alt="Icon 6" class="icon" onclick="loadPDF(6)"></li>
+                    <li><img src="icons/s7.svg" alt="Icon 7" class="icon" onclick="loadPDF(7)"></li>
+                    <li><img src="icons/s8.svg" alt="Icon 8" class="icon" onclick="loadPDF(8)"></li>
+                    <li><img src="icons/s11.svg" alt="Icon 11" class="icon" onclick="loadPDF(11)"></li>
+                    <li><img src="icons/s12.svg" alt="Icon 12" class="icon" onclick="loadPDF(12)"></li>
+                    <li><img src="icons/s13.svg" alt="Icon 13" class="icon" onclick="loadPDF(13)"></li>
+                    <li><img src="icons/s14.svg" alt="Icon 14" class="icon" onclick="loadPDF(14)"></li>
+                    <li><img src="icons/s15.svg" alt="Icon 15" class="icon" onclick="loadPDF(15)"></li>
+                    <li><img src="icons/s16.svg" alt="Icon 16" class="icon" onclick="loadPDF(16)"></li>
+                    <li><img src="icons/s17.svg" alt="Icon 17" class="icon" onclick="loadPDF(17)"></li>
+                    <li><img src="icons/s18.svg" alt="Icon 18" class="icon" onclick="loadPDF(18)"></li>
+                    <li><img src="icons/s19.svg" alt="Icon 19" class="icon" onclick="loadPDF(19)"></li>
+                    <li><img src="icons/s20.svg" alt="Icon 20" class="icon" onclick="loadPDF(20)"></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="pdf-container">
+                <iframe id="pdfIframe" src="pdfs/1.pdf"
+                    width="100%"
+                    height="100%"
+                    style="border: none;">
+                    This browser does not support PDFs. Please download the PDF to view it:
+                    <a href="pdfs/1.pdf">Download PDF</a>.
+                </iframe>
+            </div>
+
+            <div class="download-link">
+                <a id="downloadLink" href="pdfs/1.pdf" download>
+                    Download the PDF
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript code at the end of body -->
+    <script>
+        function loadPDF(pdfNumber) {
+            const pdfFileName = `pdfs/${pdfNumber}.pdf`;
+            document.getElementById('pdfIframe').src = pdfFileName;
+            document.getElementById('downloadLink').href = pdfFileName;
+        }
+        function loadPDF(pdfNumber) {
+            const pdfFileName = `pdfs/${pdfNumber}.pdf`;
+            document.getElementById('pdfIframe').src = pdfFileName;
+            document.getElementById('downloadLink').href = pdfFileName;
+        }
+    </script>
+
+</body>
+</html>
+
