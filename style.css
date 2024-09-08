@@ -55,8 +55,11 @@ main {
     padding: 1rem;
 }
 
-.pdf-container {
-    height: 600px;
+@media (max-width: 767px) {
+
+    .pdf-container {
+        height: 600px;
+    }
 }
 
 @media (min-width: 768px) {
